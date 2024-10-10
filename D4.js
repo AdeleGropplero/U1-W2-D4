@@ -128,14 +128,25 @@ console.log("Es. 7 -", "EPICODE al contrario è:", reverseString("EPICODE"));
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 9
- Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
- della stringa originale.
+ Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare 
+ una nuova stringa senza il primo e l'ultimo carattere della stringa originale.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 10
- Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
+ Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente 
+ n numeri casuali inclusi tra 0 e 10.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+const giveMeRandom = function (n) {
+  let random10 = [];
+  for (let i = 0; i < n; i++) {
+    random10.push(Math.round(Math.random() * 11));
+  }
+  return random10;
+};
+
+console.log(random10);
